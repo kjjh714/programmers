@@ -10,7 +10,17 @@ def solution(ineq, eq, n, m):
     return result
 
 
-# 다른 사람 방법---------------------------------------
+# 다른 사람 방법 1)---------------------------------------
+def solution(ineq, eq, n, m):
+    if eq == "=":
+      result = 1 if eval(str(n) + ineq + eq + str(m)) else 0
+    else:
+      result = 1 if eval(str(n) + ineq + str(m)) else 0
+
+    return result
+
+
+# 다른 사람 방법 2)---------------------------------------
 answer = 0
 
 def solution(ineq, eq, n, m):
