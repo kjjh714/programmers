@@ -1,6 +1,5 @@
 def solution(myString, pat):
-    if myString.endswith(pat):
-        answer = myString
+    answer = ''
         
     for i in range(len(myString)):
         if myString.endswith(pat,0,i+1):
